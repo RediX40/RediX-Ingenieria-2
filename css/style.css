@@ -56,7 +56,7 @@ body, html {
 }
 
 .custom-navbar .nav-link:hover {
-  color: #ffcc00; /* un amarillo suave al pasar el cursor */
+  color: hsl(60, 1%, 65%); /* un amarillo suave al pasar el cursor */
 }
 
 /* Sección Quiénes Somos */
@@ -65,9 +65,9 @@ body, html {
 }
 
 .section-quienes h2 {
-  color: #ffcc00;
+  color: #1100ff;
   font-weight: 600;
-  border-bottom: 3px solid #ffcc00;
+  border-bottom: 3px solid hsl(60, 1%, 65%);
   display: inline-block;
   padding-bottom: 8px;
   font-size: 32px;
@@ -119,6 +119,31 @@ section {
   scroll-margin-top: 80px; /* Para evitar que el navbar fijo tape la sección */
 }
 
+.btn-redix {
+  background-color: #00123e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: 0.3s ease;
+}
 
+.btn-redix:hover {
+  background-color: #011e5e;
+  transform: scale(1.05);
+}
 
+.floating-logo {
+  position: fixed;
+  top: 40px;
+  left: 40px;
+  z-index: 1050;
+  width: 80px;
+  transition: transform 0.5s ease-in-out;
+}
 
+.floating-logo img {
+  width: 100%;
+  height: auto;
+  /* border-radius: 8px; */ /* ❌ Eliminamos esta línea */
+}
